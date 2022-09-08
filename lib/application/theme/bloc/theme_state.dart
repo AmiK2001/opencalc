@@ -41,4 +41,12 @@ extension ThemeStateExtension on ThemeState {
         visualDensity: FlexColorScheme.comfortablePlatformDensity,
         useMaterial3: true,
       );
+
+  IList<FlexScheme> get defaultSchemes => FlexScheme.values.lock;
+
+  bool get isDark {
+    final brightness = SchedulerBinding.instance.window.platformBrightness;
+    return themeMode == ThemeMode.dark ||
+        (brightness == Brightness.dark && themeMode == ThemeMode.system);
+  }
 }

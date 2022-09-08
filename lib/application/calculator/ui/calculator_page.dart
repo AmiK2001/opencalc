@@ -1,5 +1,7 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:opencalc/application/app_router.dart';
 import 'package:opencalc/application/calculator/bloc/calculator_bloc.dart';
 import 'package:opencalc/core/core.dart';
 
@@ -16,13 +18,29 @@ class CalculatorPage extends StatelessWidget {
                 .add(const EdgeInsets.only(top: 20)),
             child: Column(
               children: [
-                TextField(
-                  readOnly: true,
-                  controller: TextEditingController.fromValue(
-                    TextEditingValue(
-                      text: state.input,
+                Row(
+                  children: [
+                    SizedBox(
+                      width: context.percentWidth * 80,
+                      child: TextField(
+                        readOnly: true,
+                        controller: TextEditingController.fromValue(
+                          TextEditingValue(
+                            text: state.input,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    IconButton(
+                      onPressed: () {
+                        context.router.navigate(const SettingsRoute());
+                      },
+                      icon: const Icon(Icons.settings),
+                    )
+                  ],
                 ),
                 Expanded(
                   child: GridView.count(
