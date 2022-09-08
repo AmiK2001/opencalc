@@ -1,42 +1,40 @@
-import 'package:flex_color_scheme/flex_color_scheme.dart';
+import 'package:fast_immutable_collections/fast_immutable_collections.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:opencalc/application/providers.dart';
-import 'package:opencalc/ui/calculator/calculator_page.dart';
+import 'package:opencalc/application/calculator/bloc/calculator_bloc.dart';
+import 'package:opencalc/application/calculator/ui/calculator_page.dart';
+import 'package:opencalc/application/theme/bloc/theme_bloc.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
 
   @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: providers,
-      child: MaterialApp(
-        theme: FlexThemeData.light(
-          scheme: FlexScheme.materialBaseline,
-          surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
-          blendLevel: 20,
-          appBarOpacity: 0.95,
-          subThemesData: const FlexSubThemesData(
-            blendOnLevel: 20,
-            blendOnColors: false,
-          ),
-          visualDensity: FlexColorScheme.comfortablePlatformDensity,
-          useMaterial3: true,
+      providers: [
+        BlocProvider(
+          create: (context) => ThemeBloc(),
         ),
-        darkTheme: FlexThemeData.dark(
-          scheme: FlexScheme.materialBaseline,
-          surfaceMode: FlexSurfaceMode.highScaffoldLowSurface,
-          blendLevel: 15,
-          appBarOpacity: 0.90,
-          subThemesData: const FlexSubThemesData(
-            blendOnLevel: 30,
-          ),
-          visualDensity: FlexColorScheme.comfortablePlatformDensity,
-          useMaterial3: true,
-        ),
-        debugShowCheckedModeBanner: false,
-        home: const CalculatorPage(),
+        BlocProvider(
+          create: (context) => CalculatorBloc(),
+        )
+      ],
+      child: BlocBuilder<ThemeBloc, ThemeState>(
+        builder: (context, state) {
+          return MaterialApp(
+            title: "OpenCalc",
+            theme: state.lightTheme,
+            darkTheme: state.darkTheme,
+            debugShowCheckedModeBanner: false,
+            home: const CalculatorPage(),
+          );
+        },
+        bloc: context.read(),
       ),
     );
   }
