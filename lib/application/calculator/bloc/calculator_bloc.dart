@@ -20,6 +20,14 @@ class CalculatorBloc extends HydratedBloc<CalculatorEvent, CalculatorState> {
         );
       }
 
+      if (event.calculatorButton is _Delete) {
+        return emit(
+          state.copyWith(
+            input: state.input.substring(0, state.input.length - 1),
+          ),
+        );
+      }
+
       if (event.calculatorButton is _Equals) {
         return emit(
           state.copyWith(

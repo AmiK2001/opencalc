@@ -4,11 +4,13 @@ import 'package:opencalc/application/app.dart';
 import 'package:path_provider/path_provider.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   final storage = await HydratedStorage.build(
     storageDirectory: await getApplicationDocumentsDirectory(),
   );
   HydratedBlocOverrides.runZoned(
-    () => runApp(const App()),
+    () => runApp(App()),
     storage: storage,
   );
 }
