@@ -4,12 +4,10 @@ part of 'calculator_bloc.dart';
 class CalculatorState with _$CalculatorState {
   const factory CalculatorState({
     required String input,
-    required String result,
   }) = _CalculatorState;
 
   factory CalculatorState.initial() => const CalculatorState(
         input: "",
-        result: "",
       );
 
   factory CalculatorState.fromJson(Map<String, dynamic> json) =>

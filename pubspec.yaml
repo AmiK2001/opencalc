@@ -22,6 +22,8 @@ dependencies:
   hydrated_bloc: ^8.1.0
   path_provider: ^2.0.11
   math_parser: ^1.5.0
+  flex_color_scheme: ^6.0.0
+  fpdart: ^0.2.0
 
 dev_dependencies:
   flutter_test:
