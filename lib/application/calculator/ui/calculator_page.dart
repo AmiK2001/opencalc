@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:opencalc/application/calculator/bloc/calculator_bloc.dart';
+import 'package:opencalc/core/core.dart';
 
 class CalculatorPage extends StatelessWidget {
   const CalculatorPage({super.key});
@@ -32,14 +33,13 @@ class CalculatorPage extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 30,
-                        backgroundColor: Theme.of(context).colorScheme.primary,
+                        backgroundColor: context.theme.colorScheme.primary,
                         child: IconButton(
                           icon: Text(
                             "AC",
-                            style: Theme.of(context).textTheme.button!.copyWith(
-                                  color:
-                                      Theme.of(context).colorScheme.onPrimary,
-                                ),
+                            style: context.theme.textTheme.button!.copyWith(
+                              color: context.theme.colorScheme.onPrimary,
+                            ),
                           ),
                           onPressed: () => context.read<CalculatorBloc>().add(
                                 const CalculatorEvent.buttonPressed(
@@ -50,14 +50,13 @@ class CalculatorPage extends StatelessWidget {
                       ),
                       CircleAvatar(
                         radius: 30,
-                        backgroundColor: Theme.of(context).colorScheme.tertiary,
+                        backgroundColor: context.theme.colorScheme.tertiary,
                         child: IconButton(
                           icon: Text(
                             "()",
-                            style: Theme.of(context).textTheme.button!.copyWith(
-                                  color:
-                                      Theme.of(context).colorScheme.onTertiary,
-                                ),
+                            style: context.theme.textTheme.button!.copyWith(
+                              color: context.theme.colorScheme.onTertiary,
+                            ),
                           ),
                           onPressed: () => context.read<CalculatorBloc>().add(
                                 const CalculatorEvent.buttonPressed(
@@ -84,15 +83,13 @@ class CalculatorPage extends StatelessWidget {
                       ),
                       CircleAvatar(
                         radius: 30,
-                        backgroundColor:
-                            Theme.of(context).colorScheme.secondary,
+                        backgroundColor: context.theme.colorScheme.secondary,
                         child: IconButton(
                           icon: Text(
                             "7",
-                            style: Theme.of(context).textTheme.button!.copyWith(
-                                  color:
-                                      Theme.of(context).colorScheme.onSecondary,
-                                ),
+                            style: context.theme.textTheme.button!.copyWith(
+                              color: context.theme.colorScheme.onSecondary,
+                            ),
                           ),
                           onPressed: () => context.read<CalculatorBloc>().add(
                                 const CalculatorEvent.buttonPressed(
