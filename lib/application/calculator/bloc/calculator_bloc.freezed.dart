@@ -244,7 +244,7 @@ mixin _$CalculatorButton {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) =>
       throw _privateConstructorUsedError;
@@ -268,7 +268,7 @@ mixin _$CalculatorButton {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) =>
       throw _privateConstructorUsedError;
@@ -292,7 +292,7 @@ mixin _$CalculatorButton {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) =>
@@ -457,7 +457,7 @@ class _$_Zero implements _Zero {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return zero(this);
@@ -484,7 +484,7 @@ class _$_Zero implements _Zero {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return zero?.call(this);
@@ -511,7 +511,7 @@ class _$_Zero implements _Zero {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -667,7 +667,7 @@ class _$_One implements _One {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return one(this);
@@ -694,7 +694,7 @@ class _$_One implements _One {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return one?.call(this);
@@ -721,7 +721,7 @@ class _$_One implements _One {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -877,7 +877,7 @@ class _$_Two implements _Two {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return two(this);
@@ -904,7 +904,7 @@ class _$_Two implements _Two {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return two?.call(this);
@@ -931,7 +931,7 @@ class _$_Two implements _Two {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -1087,7 +1087,7 @@ class _$_Three implements _Three {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return three(this);
@@ -1114,7 +1114,7 @@ class _$_Three implements _Three {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return three?.call(this);
@@ -1141,7 +1141,7 @@ class _$_Three implements _Three {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -1297,7 +1297,7 @@ class _$_Four implements _Four {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return four(this);
@@ -1324,7 +1324,7 @@ class _$_Four implements _Four {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return four?.call(this);
@@ -1351,7 +1351,7 @@ class _$_Four implements _Four {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -1507,7 +1507,7 @@ class _$_Five implements _Five {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return five(this);
@@ -1534,7 +1534,7 @@ class _$_Five implements _Five {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return five?.call(this);
@@ -1561,7 +1561,7 @@ class _$_Five implements _Five {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -1717,7 +1717,7 @@ class _$_Six implements _Six {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return six(this);
@@ -1744,7 +1744,7 @@ class _$_Six implements _Six {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return six?.call(this);
@@ -1771,7 +1771,7 @@ class _$_Six implements _Six {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -1927,7 +1927,7 @@ class _$_Seven implements _Seven {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return seven(this);
@@ -1954,7 +1954,7 @@ class _$_Seven implements _Seven {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return seven?.call(this);
@@ -1981,7 +1981,7 @@ class _$_Seven implements _Seven {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -2137,7 +2137,7 @@ class _$_Eight implements _Eight {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return eight(this);
@@ -2164,7 +2164,7 @@ class _$_Eight implements _Eight {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return eight?.call(this);
@@ -2191,7 +2191,7 @@ class _$_Eight implements _Eight {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -2347,7 +2347,7 @@ class _$_Nine implements _Nine {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return nine(this);
@@ -2374,7 +2374,7 @@ class _$_Nine implements _Nine {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return nine?.call(this);
@@ -2401,7 +2401,7 @@ class _$_Nine implements _Nine {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -2557,7 +2557,7 @@ class _$_Point implements _Point {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return point(this);
@@ -2584,7 +2584,7 @@ class _$_Point implements _Point {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return point?.call(this);
@@ -2611,7 +2611,7 @@ class _$_Point implements _Point {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -2767,7 +2767,7 @@ class _$_Delete implements _Delete {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return delete(this);
@@ -2794,7 +2794,7 @@ class _$_Delete implements _Delete {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return delete?.call(this);
@@ -2821,7 +2821,7 @@ class _$_Delete implements _Delete {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -2977,7 +2977,7 @@ class _$_Equals implements _Equals {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return equals(this);
@@ -3004,7 +3004,7 @@ class _$_Equals implements _Equals {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return equals?.call(this);
@@ -3031,7 +3031,7 @@ class _$_Equals implements _Equals {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -3190,7 +3190,7 @@ class _$_AllClear implements _AllClear {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return allClear(this);
@@ -3217,7 +3217,7 @@ class _$_AllClear implements _AllClear {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return allClear?.call(this);
@@ -3244,7 +3244,7 @@ class _$_AllClear implements _AllClear {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -3403,7 +3403,7 @@ class _$_Brackets implements _Brackets {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return brackets(this);
@@ -3430,7 +3430,7 @@ class _$_Brackets implements _Brackets {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return brackets?.call(this);
@@ -3457,7 +3457,7 @@ class _$_Brackets implements _Brackets {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -3615,7 +3615,7 @@ class _$_Percent implements _Percent {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return percent(this);
@@ -3642,7 +3642,7 @@ class _$_Percent implements _Percent {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return percent?.call(this);
@@ -3669,7 +3669,7 @@ class _$_Percent implements _Percent {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -3825,7 +3825,7 @@ class _$_Divide implements _Divide {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return divide(this);
@@ -3852,7 +3852,7 @@ class _$_Divide implements _Divide {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return divide?.call(this);
@@ -3879,7 +3879,7 @@ class _$_Divide implements _Divide {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -4038,7 +4038,7 @@ class _$_Multiply implements _Multiply {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return multiply(this);
@@ -4065,7 +4065,7 @@ class _$_Multiply implements _Multiply {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return multiply?.call(this);
@@ -4092,7 +4092,7 @@ class _$_Multiply implements _Multiply {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -4108,28 +4108,28 @@ abstract class _Multiply implements CalculatorButton {
 }
 
 /// @nodoc
-abstract class _$$_SubstractCopyWith<$Res> {
-  factory _$$_SubstractCopyWith(
-          _$_Substract value, $Res Function(_$_Substract) then) =
-      __$$_SubstractCopyWithImpl<$Res>;
+abstract class _$$_SubtractCopyWith<$Res> {
+  factory _$$_SubtractCopyWith(
+          _$_Subtract value, $Res Function(_$_Subtract) then) =
+      __$$_SubtractCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SubstractCopyWithImpl<$Res>
+class __$$_SubtractCopyWithImpl<$Res>
     extends _$CalculatorButtonCopyWithImpl<$Res>
-    implements _$$_SubstractCopyWith<$Res> {
-  __$$_SubstractCopyWithImpl(
-      _$_Substract _value, $Res Function(_$_Substract) _then)
-      : super(_value, (v) => _then(v as _$_Substract));
+    implements _$$_SubtractCopyWith<$Res> {
+  __$$_SubtractCopyWithImpl(
+      _$_Subtract _value, $Res Function(_$_Subtract) _then)
+      : super(_value, (v) => _then(v as _$_Subtract));
 
   @override
-  _$_Substract get _value => super._value as _$_Substract;
+  _$_Subtract get _value => super._value as _$_Subtract;
 }
 
 /// @nodoc
 
-class _$_Substract implements _Substract {
-  const _$_Substract();
+class _$_Subtract implements _Subtract {
+  const _$_Subtract();
 
   @override
   String toString() {
@@ -4139,7 +4139,7 @@ class _$_Substract implements _Substract {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Substract);
+        (other.runtimeType == runtimeType && other is _$_Subtract);
   }
 
   @override
@@ -4251,7 +4251,7 @@ class _$_Substract implements _Substract {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return subtract(this);
@@ -4278,7 +4278,7 @@ class _$_Substract implements _Substract {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return subtract?.call(this);
@@ -4305,7 +4305,7 @@ class _$_Substract implements _Substract {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {
@@ -4316,8 +4316,8 @@ class _$_Substract implements _Substract {
   }
 }
 
-abstract class _Substract implements CalculatorButton {
-  const factory _Substract() = _$_Substract;
+abstract class _Subtract implements CalculatorButton {
+  const factory _Subtract() = _$_Subtract;
 }
 
 /// @nodoc
@@ -4461,7 +4461,7 @@ class _$_Plus implements _Plus {
     required TResult Function(_Percent value) percent,
     required TResult Function(_Divide value) divide,
     required TResult Function(_Multiply value) multiply,
-    required TResult Function(_Substract value) subtract,
+    required TResult Function(_Subtract value) subtract,
     required TResult Function(_Plus value) plus,
   }) {
     return plus(this);
@@ -4488,7 +4488,7 @@ class _$_Plus implements _Plus {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
   }) {
     return plus?.call(this);
@@ -4515,7 +4515,7 @@ class _$_Plus implements _Plus {
     TResult Function(_Percent value)? percent,
     TResult Function(_Divide value)? divide,
     TResult Function(_Multiply value)? multiply,
-    TResult Function(_Substract value)? subtract,
+    TResult Function(_Subtract value)? subtract,
     TResult Function(_Plus value)? plus,
     required TResult orElse(),
   }) {

@@ -21,7 +21,7 @@ class CalculatorButton with _$CalculatorButton {
   const factory CalculatorButton.percent() = _Percent;
   const factory CalculatorButton.divide() = _Divide;
   const factory CalculatorButton.multiply() = _Multiply;
-  const factory CalculatorButton.subtract() = _Substract;
+  const factory CalculatorButton.subtract() = _Subtract;
   const factory CalculatorButton.plus() = _Plus;
 }
 
