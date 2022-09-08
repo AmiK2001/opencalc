@@ -9,8 +9,6 @@ part 'calculator_event.dart';
 part 'calculator_bloc.freezed.dart';
 part 'calculator_bloc.g.dart';
 
-const _tag = "CalculatorBloc";
-
 class CalculatorBloc extends HydratedBloc<CalculatorEvent, CalculatorState> {
   CalculatorBloc() : super(CalculatorState.initial()) {
     on<_ButtonPressed>((event, emit) {

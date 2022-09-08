@@ -18,19 +18,19 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$ThemeEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FlexScheme colorScheme) changeScheme,
+    required TResult Function(FlexScheme scheme) changeScheme,
     required TResult Function(ThemeMode themeMode) changeThemeMode,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(FlexScheme colorScheme)? changeScheme,
+    TResult Function(FlexScheme scheme)? changeScheme,
     TResult Function(ThemeMode themeMode)? changeThemeMode,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FlexScheme colorScheme)? changeScheme,
+    TResult Function(FlexScheme scheme)? changeScheme,
     TResult Function(ThemeMode themeMode)? changeThemeMode,
     required TResult orElse(),
   }) =>
@@ -77,7 +77,7 @@ abstract class _$$_ChangeSchemeCopyWith<$Res> {
   factory _$$_ChangeSchemeCopyWith(
           _$_ChangeScheme value, $Res Function(_$_ChangeScheme) then) =
       __$$_ChangeSchemeCopyWithImpl<$Res>;
-  $Res call({FlexScheme colorScheme});
+  $Res call({FlexScheme scheme});
 }
 
 /// @nodoc
@@ -92,12 +92,12 @@ class __$$_ChangeSchemeCopyWithImpl<$Res> extends _$ThemeEventCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? colorScheme = freezed,
+    Object? scheme = freezed,
   }) {
     return _then(_$_ChangeScheme(
-      colorScheme == freezed
-          ? _value.colorScheme
-          : colorScheme // ignore: cast_nullable_to_non_nullable
+      scheme == freezed
+          ? _value.scheme
+          : scheme // ignore: cast_nullable_to_non_nullable
               as FlexScheme,
     ));
   }
@@ -106,14 +106,14 @@ class __$$_ChangeSchemeCopyWithImpl<$Res> extends _$ThemeEventCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_ChangeScheme implements _ChangeScheme {
-  const _$_ChangeScheme(this.colorScheme);
+  const _$_ChangeScheme(this.scheme);
 
   @override
-  final FlexScheme colorScheme;
+  final FlexScheme scheme;
 
   @override
   String toString() {
-    return 'ThemeEvent.changeScheme(colorScheme: $colorScheme)';
+    return 'ThemeEvent.changeScheme(scheme: $scheme)';
   }
 
   @override
@@ -121,13 +121,12 @@ class _$_ChangeScheme implements _ChangeScheme {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ChangeScheme &&
-            const DeepCollectionEquality()
-                .equals(other.colorScheme, colorScheme));
+            const DeepCollectionEquality().equals(other.scheme, scheme));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(colorScheme));
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(scheme));
 
   @JsonKey(ignore: true)
   @override
@@ -137,30 +136,30 @@ class _$_ChangeScheme implements _ChangeScheme {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FlexScheme colorScheme) changeScheme,
+    required TResult Function(FlexScheme scheme) changeScheme,
     required TResult Function(ThemeMode themeMode) changeThemeMode,
   }) {
-    return changeScheme(colorScheme);
+    return changeScheme(scheme);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(FlexScheme colorScheme)? changeScheme,
+    TResult Function(FlexScheme scheme)? changeScheme,
     TResult Function(ThemeMode themeMode)? changeThemeMode,
   }) {
-    return changeScheme?.call(colorScheme);
+    return changeScheme?.call(scheme);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FlexScheme colorScheme)? changeScheme,
+    TResult Function(FlexScheme scheme)? changeScheme,
     TResult Function(ThemeMode themeMode)? changeThemeMode,
     required TResult orElse(),
   }) {
     if (changeScheme != null) {
-      return changeScheme(colorScheme);
+      return changeScheme(scheme);
     }
     return orElse();
   }
@@ -198,9 +197,9 @@ class _$_ChangeScheme implements _ChangeScheme {
 }
 
 abstract class _ChangeScheme implements ThemeEvent {
-  const factory _ChangeScheme(final FlexScheme colorScheme) = _$_ChangeScheme;
+  const factory _ChangeScheme(final FlexScheme scheme) = _$_ChangeScheme;
 
-  FlexScheme get colorScheme;
+  FlexScheme get scheme;
   @JsonKey(ignore: true)
   _$$_ChangeSchemeCopyWith<_$_ChangeScheme> get copyWith =>
       throw _privateConstructorUsedError;
@@ -271,7 +270,7 @@ class _$_ChangeThemeMode implements _ChangeThemeMode {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(FlexScheme colorScheme) changeScheme,
+    required TResult Function(FlexScheme scheme) changeScheme,
     required TResult Function(ThemeMode themeMode) changeThemeMode,
   }) {
     return changeThemeMode(themeMode);
@@ -280,7 +279,7 @@ class _$_ChangeThemeMode implements _ChangeThemeMode {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(FlexScheme colorScheme)? changeScheme,
+    TResult Function(FlexScheme scheme)? changeScheme,
     TResult Function(ThemeMode themeMode)? changeThemeMode,
   }) {
     return changeThemeMode?.call(themeMode);
@@ -289,7 +288,7 @@ class _$_ChangeThemeMode implements _ChangeThemeMode {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(FlexScheme colorScheme)? changeScheme,
+    TResult Function(FlexScheme scheme)? changeScheme,
     TResult Function(ThemeMode themeMode)? changeThemeMode,
     required TResult orElse(),
   }) {

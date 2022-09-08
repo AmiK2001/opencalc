@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:opencalc/application/calculator/bloc/calculator_bloc.dart';
-import 'package:opencalc/application/theme/bloc/theme_bloc.dart';
 
 class CalculatorPage extends StatelessWidget {
   const CalculatorPage({super.key});

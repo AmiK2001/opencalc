@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -11,8 +10,11 @@ part 'theme_bloc.g.dart';
 
 class ThemeBloc extends HydratedBloc<ThemeEvent, ThemeState> {
   ThemeBloc() : super(ThemeState.initial()) {
-    on<ThemeEvent>((event, emit) {
-      // TODO: implement event handler
+    on<_ChangeScheme>((event, emit) {
+      return emit(state.copyWith(scheme: event.scheme));
+    });
+    on<_ChangeThemeMode>((event, emit) {
+      return emit(state.copyWith(themeMode: event.themeMode));
     });
   }
 
