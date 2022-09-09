@@ -2,7 +2,6 @@ import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:opencalc/application/theme/bloc/theme_bloc.dart';
-import 'package:opencalc/core/core.dart';
 
 class ThemePage extends StatelessWidget {
   const ThemePage({super.key});
